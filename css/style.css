@@ -15,18 +15,65 @@ h1 {
   color: #192b59;
 }
 
+/* Header */
+.header__group a + a {
+  margin-left: 15px;
+}
+
 /* Nav */
 .nav {
   font-size: 12px;
   color: #6e7ea9;
   text-transform: uppercase;
   font-weight: 700;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Button */
-.btn-free {
+.btn {
   color: #fff;
+  background-color: #1085e4;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border: 1px solid #1085e4;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  color: #1085e4;
+  background-color: #fff;
+}
+
+.btn--first {
+  letter-spacing: 1.7px;
   font-weight: 400;
+  padding: 21px 56px;
+}
+
+.btn--secondary {
+  color: #7e8bae;
+  background-color: #cbdbe8;
+  border: 1px solid #cbdbe8;
+}
+
+.btn--secondary:hover {
+  color: #cbdbe8;
+  background-color: #7e8bae;
+}
+
+.btn--info {
+  color: #8085b1;
+  background-color: transparent;
+  border: 1px solid #dce1e5;
+}
+
+.btn--info:hover {
+  color: #fff;
   background-color: #1085e4;
 }
 
