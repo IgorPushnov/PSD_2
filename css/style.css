@@ -14,6 +14,8 @@ a {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Header */
@@ -87,6 +89,22 @@ a {
 .nav__item {
   color: #6e7ea9;
   letter-spacing: 2px;
+}
+
+.nav__menu {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.nav__menu:focus {
+  outline: none;
+}
+
+.nav__menu svg {
+  width: 35px;
+  height: 35px;
+  fill: #192b59;
 }
 
 /* Button */
@@ -494,6 +512,7 @@ a {
   height: 105px;
 }
 
+
 .software__title {
   font-size: 50px;
   font-weight: 600;
@@ -547,7 +566,6 @@ a {
   background-color: #edf6ff;
   padding: 116px 0 96px 0;
   position: relative;
-  overflow: hidden;
 }
 
 .stat__title {
@@ -614,11 +632,12 @@ a {
   position: absolute;
   width: 550px;
   height: 665px;
-  right: -90px;
+  right: 0px;
   top: -190px;
   background-image: url(../img/rhombus-gray.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  overflow-x: hidden;
 }
 
 /* App */
@@ -633,11 +652,12 @@ a {
   font-weight: 900;
   line-height: 0;
   position: absolute;
-  left: -40px;
+  left: -36px;
   right: 0;
   top: 160px;
   margin: 0;
   text-align: center;
+  letter-spacing: -1px;
 }
 
 .app__block {
@@ -649,9 +669,9 @@ a {
   font-size: 50px;
   font-weight: 600;
   color: #192b59;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   line-height: 1.2;
-  letter-spacing: -1.4px;
+  letter-spacing: -2px;
 }
 
 .app__text {
@@ -1134,7 +1154,7 @@ a {
   background-position: -7px -2px;
   width: 21px;
   height: 21px;
-  margin: 0 auto;
+  margin: 14px auto;
 }
 
 .team__plus:hover {
@@ -1157,7 +1177,7 @@ a {
   width: 14px;
   height: 21px;
   background-position: -34px 2px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .team__btn--tw {
@@ -1168,7 +1188,7 @@ a {
   width: 14px;
   height: 21px;
   background-position: -62px 2px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .team__btn--be {
@@ -1179,7 +1199,7 @@ a {
   width: 14px;
   height: 21px;
   background-position: -89px 2px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .team__btn--web {
@@ -1190,7 +1210,7 @@ a {
   width: 14px;
   height: 21px;
   background-position: -116px 2px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 /* Form */
@@ -1356,6 +1376,1183 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1910px) {
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px 15px 45px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 5px 6px #f4f4f4;
+}
+
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__link {
+  margin-bottom: 12px;
+}
+
+.modal__link:last-child {
+  margin-top: 35px;
+}
+
+.modal__item {
+  color: #6e7ea9;
+  letter-spacing: 2px;
+}
+
+.modal__close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 21px;
+  top: 15px;
+  font-size: 35px;
+  color: #6e7ea9;
+  opacity: .2;
+  transition: .3s;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.modal__close:focus {
+  outline: none;
+}
+
+@media (max-width: 1650px) {
+  .header__logo {
+    margin-left: 308px;
+  }
+
+  .header__screen {
+    width: 775px;
+  }
+
+  .grid__block {
+    margin: 0 0 0 300px;
+  }
+
+  .software__screen {
+    width: 626px;
+  }
+
+  .form__text {
+    padding-right: 110px;
+  }
+  
+}
+
+@media (max-width: 1600px) {
+  .wrap {
+    min-width: 500px;
+  }
+
+  .analytics__screen {
+    left: -120px;
+  }
+
+  .app__video {
+    width: 450px;
+    height: 420px;
+  }
+
+  .company__list {
+    padding-left: 10vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header__logo {
+    margin-left: 158px;
+  }
+
+  .header__screen {
+    width: 655px;
+  }
+
+  .company__list {
+    padding-left: 5vw;
+  }
+
+  .grid__block {
+    margin-left: 150px;
+  }
+
+  .analytics__screen {
+    left: -80px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .company__list {
+    padding-left: 1vw;
+  }
+
+  .grid__block {
+    margin-left: 100px;
+  }
+
+  .software__screen {
+    width: 556px;
+  }
+
+  .software__box {
+    padding: 9px 0 6px 0;
+  }
+
+  .stat__circle {
+    display: none;
+  }
+
+  .stat__rhombus {
+    display: none;
+  }
+
+  .app__intro {
+    display: none;
+  }
+
+  .app__video {
+    right: 140px;
+  }
+
+  .app__screen {
+    width: 460px;
+    height: 415px;
+  }
+
+  .btn {
+    border-color: #f4f4ea;
+  }
+
+  .screen {
+    padding-top: 50px;
+  }
+
+  .screen__img {
+    width: 950px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__logo {
+    margin-left: 58px;
+  }
+
+  .company__list {
+    justify-content: center;
+  }
+
+  .company__item {
+    width: 30%;
+    height: 69px;
+    padding: 20px 60px 0;
+  }
+
+  .grid__block {
+      margin-left: 30px;
+  }
+
+  .software__box {
+    flex-basis: 50%;
+  }
+
+  .app__video {
+    right: 80px;
+  }
+
+  .analytics__screen {
+    left: 0px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-left: 38px;
+  }
+
+  .nav__link:first-child {
+    margin-left: 37px;
+  }
+
+  .header {
+    padding-bottom: 120px;
+  }
+
+  .header__screen {
+    width: 550px;
+    height: 550px;
+  }
+
+  .grid__block {
+    margin-left: 5px;
+  }
+
+  .grid__paragraph {
+    padding-right: 45px;
+  }
+
+  .subscribe__intro {
+    justify-content: center;
+  }
+
+  .subscribe__screen {
+    padding-left: 46px;
+  }
+
+  .software__screen {
+    width: 500px;
+  }
+
+  .app__video {
+    right: 40px;
+  }
+
+  .control__screen {
+    left: 0px;
+  }
+
+  .plan {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .plan__title {
+    margin-bottom: 40px;
+  }
+
+  .form__img {
+    margin-left: 40px;
+  }
+
+  .form__box {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__block {
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  }
+
+  .header__screen {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 50px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .header__group {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .company__item {
+    height: 50%;
+  }
+
+  .grid__block {
+    grid-template-areas: "a a"
+                         "b c"
+                         "d e"
+                         "f g"
+                         "h h";
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 300px;
+  }
+
+  .grid__title {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .grid__item {
+    margin: 0;
+  }
+
+  .grid__footer {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .grid__paragraph {
+    margin: 0;
+  }
+
+  .software {
+    padding: 0 60px;
+  }
+
+  .software__screen {
+    display: none;
+  }
+
+  .software__block {
+    justify-content: center;
+  }
+
+  .software__box {
+    flex-basis: 100%;
+  }
+
+  .software__list {
+    height: 265px;
+    max-width: 800px;
+    margin-right: 50px;
+  }
+
+  .software__note {
+    padding: 0 15px;
+  }
+
+  .stat {
+    padding: 40px 0 40px 0;
+  }
+
+  .stat__title {
+    font-size: 40px;
+  }
+
+ .app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+ }
+
+ .app__block {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+ }
+
+ .app__title {
+   font-size: 40px;
+ }
+
+ .app__video {
+    top: 20px;
+    right: 15%;
+    margin-bottom: 30px;
+ }
+
+ .app__screen {
+   width: 50%;
+   height: 50%;
+ }
+
+ .analytics__input {
+    flex-direction: column-reverse;
+ }
+
+ .analytics__block {
+  padding-top: 0px;
+  width: 100%;
+  text-align: center;
+  }
+
+  .analytics__img {
+    width: 100%;
+  }
+
+  .analytics__screen {
+    top: 30px;
+    left: 30%;
+  }
+
+  .analytics__icon {
+    margin: 0 auto;
+  }
+
+  .analytics__title {
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .analytics__text {
+    padding: 0 20px;
+    color: #000;
+  }
+
+  .analytics__btn {
+    margin-top: 28px;
+  }
+
+  .control__input {
+    flex-direction: column;
+  }
+
+  .control {
+    height: 770px;
+  }
+
+  .control__block {
+    padding-top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .control__img {
+    width: 100%;
+  }
+
+  .control__screen {
+    top: 30px;
+    left: 25%;
+  }
+
+  .control__icon {
+    margin: 0 auto;
+  }
+
+  .control__title {
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .control__text {
+    padding: 0 20px;
+    color: #000;
+  }
+
+  .control__btn {
+    margin-top: 28px;
+  }
+  
+  .screen__img {
+    width: 80%;
+  }
+
+  .team__box {
+    justify-content: space-around;
+  }
+
+  .team__name {
+    font-size: 16px;
+  }
+
+  .team__avatar {
+    width: 280px;
+  }
+
+  .form {
+    height: 640px;
+  }
+
+  .form__img {
+    display: none;
+  }
+
+  .form__box {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .form__title {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .form__item::after {
+    right: 30%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .form__item::after {
+    right: 27%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .header {
+    padding-bottom: 60px;
+  }
+
+  .header__block {
+      margin-bottom: 40px;
+  }
+
+  .header__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .company__item--one,
+  .company__item--two {
+    height: 30%;
+    margin-top: 30px;
+  }
+
+  .company__item--three,
+  .company__item--four {
+    height: 30%;
+    margin-bottom: 30px;
+  }
+
+  .subscribe__intro {
+    flex-direction: column-reverse;
+  }
+
+  .subscribe__screen {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .subscribe__img {
+    width: 240px;
+    height: 280px;
+  }
+
+  .subscribe__block {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .subscribe__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  .subscribe__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .subscribe__text {
+    margin-bottom: 10px;
+  }
+
+  .subscribe__email {
+    margin: 0 100px 0 100px;
+  }
+
+  .subscribe__input {
+    padding: 17px 230px 17px 30px;
+  }
+
+  .subscribe__btn {
+    padding: 12px 40px;
+  }
+
+  .software__title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .software__icon {
+    margin: 0 auto;
+    background-position: 0;
+  }
+
+  .app__video {
+    flex-basis: 100%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+  }
+
+  .app__screen {
+    margin-left: 30%;
+  }
+
+  .analytics__screen {
+    width: 50%;
+  }
+
+  .control {
+    height: 700px;
+  }
+
+  .control__screen {
+    width: 50%;
+  }
+
+  .clients {
+    background-color: #1085E4;
+    padding-bottom: 20px;
+  }
+
+  .clients__title {
+    padding-top: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .clients__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .clients__box {
+    flex-direction: column;
+  }
+
+  .clients__item {
+    margin: 10px auto 0;
+    width: 50%;
+  }
+
+  .clients__text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .clients__info {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .plan {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .plan__box {
+    flex-direction: column;
+  }
+
+  .plan__price {
+    width: 55%;
+    margin: 0 auto 15px;
+    background-image: none;
+    padding-bottom: 30px;
+  }
+
+  .plan__name {
+    margin-top: 0;
+  }
+
+  .plan__start {
+    margin-bottom: 15px;
+  }
+
+  .plan__item {
+    margin-bottom: 15px;
+  }
+
+  .plan__item:last-child {
+    margin-bottom: 30px;
+  }
+
+  .team {
+    height: 510px;
+  }
+
+  .team__title {
+    margin: 0;
+    padding-top: 25px;
+  }
+
+  .team__avatar {
+    width: 200px;
+  }
+
+  .team__prof {
+    margin-top: 120px;
+  }
+
+  .team__item {
+    padding-bottom: 28px;
+  }
+
+  .form__text {
+    padding-right: 110px;
+  }
+  
+  .form__item::after {
+    right: 24%;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .form__item::after {
+    right: 21%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding-top: 23px;
+  }
+
+  .header__block {
+    margin-bottom: 20px;
+  }
+
+  .company__item {
+    width: 25%;
+  }
+
+  .company__img {
+    width: 70%;
+  }
+
+  .grid__block {
+    margin-bottom: 320px;
+  }
+
+  .subscribe__email {
+    margin: 0 50px 0 50px;
+  }
+
+  .stat {
+    padding: 20px 0;
+  }
+
+  .stat__list {
+    padding: 0 65px;
+  }
+
+  .stat__item {
+    font-size: 50px;
+  }
+
+  .team {
+    background-position: top;
+    height: 1200px;
+  }
+
+  .team__box {
+    flex-direction: column;
+  }
+
+  .team__item {
+    flex-basis: 100%;
+    width: 50%;
+    margin: 104px auto 0;
+  }
+
+  .form__item::after {
+    right: 18%;
+  }
+
+  .footer__title {
+    padding-left: 0;
+  }
+
+  .footer__social {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    min-width: 0;
+  }
+
+  .header__title {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .company__list {
+    height: 200px;
+  }
+
+  .grid__block {
+    grid-template-areas: "a"
+                         "b" 
+                         "c"
+                         "d" 
+                         "e"
+                         "f" 
+                         "g"
+                         "h";
+    grid-template-columns: 1fr;
+    margin: 0 0 1400px;
+  }
+
+  .grid__title {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;  
+  }
+
+  .subscribe__title {
+    font-size: 30px;
+  }
+
+  .software__title {
+    font-size: 30px;
+  }
+
+  .stat__title {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .stat__list {
+    padding: 0 25px;
+  }
+
+  .app__title {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  .analytics {
+    height: 650px;
+  }
+
+  .analytics__title {
+    font-size: 30px;
+  }
+
+  .control {
+    height: 650px;
+  }
+
+  .control__title {
+    font-size: 30px;
+  }
+
+  .screen {
+    padding-top: 15px;
+  }
+
+  .screen__title {
+    font-size: 30px;
+  }
+
+  .screen__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .screen__img {
+    margin-bottom: 25px;
+  }
+
+  .clients__title {
+    font-size: 30px;
+  }
+
+  .clients__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .plan__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .plan__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .team__title {
+    font-size: 30px;
+  }
+
+  .team__subtitle {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .form {
+    height: 580px;
+  }
+
+  .form__title {
+    font-size: 30px;
+  }
+
+  .form__text {
+    width: 300px;
+  }
+
+  .form__item::after {
+    right: 28%;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 105px;
+  }
+
+  .footer__box {
+    margin-top: 15px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .footer__brend {
+    font-size: 14px;
+  }
+
+  .footer__social {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding-bottom: 20px;
+  }
+
+  .btn--secondary {
+    display: block;
+    margin: 50px auto 0;
+    width: 50%;
+  }
+
+  .company {
+    height: 300px;
+  }
+
+  .company__list {
+    height: 300px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .company__item {
+    
+    width: 55%;
+    padding: 0;
+  }
+
+  .company__item--one {
+    height: 20%;
+    margin-top: 10px;
+  }
+
+  .company__item--two {
+    height: 20%;
+    margin-top: 0;
+  }
+
+  .company__item--three {
+    height: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .company__item--four {
+    height: 20%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .company__img {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  .grid__paragraph {
+    font-size: 14px;
+  }
+
+  .subscribe {
+    height: 560px;
+  }
+
+  .subscribe__text {
+    font-size: 14px;
+  }
+
+  .subscribe__email {
+    margin: 0;
+  }
+
+  .subscribe__input {
+    margin-bottom: 5px;
+  }
+
+  .subscribe__btn {
+    position: relative;
+  }
+
+  .software {
+    padding: 0 30px;
+  }
+
+  .stat__list {
+    padding: 0;
+  }
+
+  .stat__item {
+    font-size: 40px;
+  }
+
+  .app__video {
+    text-align: center;
+    margin: 0;
+  }
+
+  .app__screen {
+    margin-left: 0;
+  }
+
+  .plan__price {
+    width: 70%;
+  }
+
+  .team__item {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .grid__block {
+    margin-bottom: 1150px;
+  }
+
+  .grid__item {
+    height: 300px;
+  }
+
+  .subscribe {
+    height: 590px;
+  }
+
+  .subscribe__text {
+    letter-spacing: 1.4px;
+  }
+
+  .subscribe__input {
+    padding-right: 30px;
+  }
+
+  .software {
+    padding: 0 10px;
+  }
+
+  .software__list {
+    margin-right: 10px;
+  }
+
+  .stat__item {
+    font-size: 30px;
+  }
+
+  .stat__number {
+    font-weight: 700;
+    letter-spacing: .2px;
+  }
+
+  .app {
+    padding: 0;
+  }
+
+  .app__video {
+    height: 100%;
+    width: 100%;
+  }
+
+  .app__screen {
+    width: 18%;
+    height: 8%;
+  }
+
+  .app__block {
+    padding-top: 70px;
+  }
+
+  .app__text {
+    font-size: 14px;
+  }
+
+  .analytics__screen {
+    width: 60%;
+  }
+
+  .control__btn {
+    margin-left: 0;
+  }
+
+  .control__screen {
+    width: 60%;
+  }
+
+  .screen__title {
+    letter-spacing: -1px;
+  }
+
+  .clients__item {
+    padding: 0 15px;
+    width: 70%;
+  }
+
+  .plan__name {
+    font-size: 60px;
+  }
+
+  .plan__item {
+    margin-bottom: 5px;
+  }
+
+  .btn--info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btn--plan {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .form__item::after {
+    right: 10%;
+  }
+}
+
+@media (max-width: 320px) {
 
 }
